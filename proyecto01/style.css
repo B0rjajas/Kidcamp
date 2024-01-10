@@ -1,0 +1,636 @@
+
+/*GENERALES*/
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*HEADER*/
+
+.navbar {
+    background-image: url(./img/pexels-suresh-kshetri-19466694.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    height: 70vh;
+    border-radius: 0px 0px 200px 200px;
+    
+}
+
+.barra {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+    height: 109px;
+    gap: 40px;
+    align-items: center;
+    
+    padding: 1rem; 
+    
+}
+
+
+
+.enlaces a {
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+}
+
+
+
+.logo {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+
+/*MENU HAMBURGUESA*/
+
+/* Estilos para el menú hamburguesa */
+.menu-hamburguesa {
+  display: none; /* Ocultar por defecto en tamaños de pantalla grandes */
+  cursor: pointer;
+}
+
+.linea {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+@media screen and (max-width:920px) {
+
+  .enlaces {
+    display: none;
+  }
+
+  .menu-hamburguesa {
+    display: block; /* Ocultar por defecto en tamaños de pantalla grandes */
+    cursor: pointer;
+  }
+
+ 
+}
+
+
+
+
+
+
+
+/* CSS */
+.button-18 {
+  align-items: center;
+  background-color: red;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.button-18::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: rgba(22, 67, 126, 0.7); /* Cambia esto al color que desees */
+  border-radius: 50%;
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+  pointer-events: none;
+}
+
+.button-18:hover::before,
+.button-18:focus::before {
+  width: 200%;
+  height: 200%;
+}
+
+
+/*Section HOME*/
+
+.home {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    top: -500px;
+    left: -148px;
+     
+}
+
+.cajaizq {
+    height: 437px;
+    width: 587px;
+    position: relative;
+    left: -40px;
+    
+    color: #ffffff;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.5);
+
+}
+
+
+.cajadech {
+    height: 283px;
+    width: 498px;
+    background-color: rgb(213, 226, 226);
+    border: solid white 3px;
+    border-radius: 50px;
+
+    background-image: url(./img/pexels-khalig-valiyev-19403741.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    -webkit-box-shadow: 28px 34px 0px -20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 28px 34px 0px -20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+}
+
+
+/*MEdiaQueries*/
+/* Media query para pantallas más pequeñas (ajustar según tus necesidades) */
+@media (max-width: 800px) {
+  .home {
+      grid-template-columns: 1fr; /* Una columna para pantallas más pequeñas */
+      gap: 10px; /* Reducir el espacio entre las cajas */
+      top: -150;
+      left: 0;
+      text-align: center; /* Centrar el texto en pantallas más pequeñas */
+      
+    }
+
+  .cajadech {
+      width: 100%; /* Hacer que la imagen ocupe el ancho completo */
+      height: 300px; /* Ajustar la altura según tus necesidades */
+      left: 0px;
+      top: 0px;
+      
+    }
+
+  .cajaizq {
+      text-align: center; /* Centrar el texto en pantallas más pequeñas */
+      margin-bottom: 20px; /* Añadir espacio inferior */
+      left: 0px;
+      top: 0px;
+      font-size: 50px;
+
+  }
+}
+
+/*SERVICIOS*/
+
+.servicios {
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; /* Ajusta según tus necesidades */
+    gap: 30px; 
+       
+   
+    border-radius: 25px;
+    margin-top: -500px;
+    height: 400px;
+   
+
+}
+
+
+.img-pequena {
+    width: 400px; 
+    height: auto;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 50px; /* Esquinas redondeadas */
+    overflow: hidden; /* Para ocultar cualquier contenido que se desborde */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición al pasar el ratón */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(50deg, #fbfdff 0%, #f6fcf7 100%);
+    
+    }
+  
+  .card:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el ratón */
+  }
+  
+
+  
+  .card h4 {
+    font-size: 1.5rem; /* Tamaño del texto del encabezado */
+    margin: 5px;
+     
+
+  }
+  
+  .card p {
+    font-size: 1rem; /* Tamaño del texto del párrafo */
+    color: #666; /* Color del texto gris oscuro */
+    margin-bottom: 15px; /* Margen inferior */
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  svg {
+    height: 120px;
+    margin-bottom: 30px;
+  }
+  
+
+
+  /*PRESENTACION*/
+
+  .presentacion {
+    padding: 20px; /* Añade espacio alrededor del contenido */
+    background-color: #f5f5f5; /* Color de fondo de la sección */
+    text-align: center; /* Alinea el texto al centro, ajusta según tus necesidades */
+    margin-top: 30px;
+    /*background-image: url(img/puede-psicologo-contar-a-otros-lo-que-explicas-small-16_9.jpeg); */
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+blockquote {
+    font-size: 2rem;
+    border-left: 5px solid #4CAF50; /* Color del borde izquierdo */
+    margin: 20px 0;
+    padding: 15px;
+    
+    font-style: italic;
+  }
+
+  blockquote p {
+    margin: 0;
+  }
+
+  blockquote footer {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    color: #4CAF50; /* Color del texto del autor */
+  }
+
+  
+  
+  /*Testigos*/
+
+  
+
+  .testigos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
+    
+    grid-template-areas:
+    "hache2 hache2 hache2 hache2"
+      "box1 box2 box3 box4"
+      "imagen imagen imagen imagen";
+  }
+
+  .testigos h2{
+    grid-column: span 4;
+    font-size: 4rem;
+  }
+
+  .box{
+    background-color: #4CAF50;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    padding: 5px;  
+
+  }
+  
+  .box p {
+    font-size: 3rem;
+    color: #d9e7ff;
+  }
+
+  .box h4 {
+    color: #d9e7ff;
+  }
+
+
+  .imagen {
+    grid-column: span 4; /* Ocupa 4 columnas */
+    height: 400px;
+    background-image: url(img/consulta-psicologa-2716149.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+/*Formulario*/
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario form {
+    width: 100%;
+    max-width: 1200px; /* Ajusta este valor según tus necesidades */
+}
+
+.formulario label {
+    font-size: 4rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+    margin-top: 80px;
+    margin-bottom: 24px;
+    display: block;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 80px;
+    font-size: 3rem;
+    font-style: italic;
+   
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc; /* Ajusta el estilo del borde según tus necesidades */
+    border-radius: 0px; /* Ajusta el radio del borde según tus necesidades */
+    background-color: transparent;
+}
+
+
+.formulario textarea {
+    resize: vertical; /* Permite la redimensión vertical del textarea */
+    height: 234px;
+}
+
+.formulario .btnFormulario,
+.formulario .btnReset {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 100px;
+    width: 200px;
+}
+
+.formulario .btnFormulario {
+  margin-right: 40px; /* Ajusta el espacio entre los botones según tus necesidades */
+}
+
+    .formulario .btnFormulario .opacity {
+    opacity: 20%;
+  }
+
+  .formulario .botones-container {
+    display: flex;
+    justify-content: flex-end; /* Ajusta según tus necesidades: center, flex-start, flex-end */
+    align-items: center;
+  }
+
+
+
+
+/* Estilo predeterminado del spinner (invisible) */
+.spinner2 {
+    /* Agrega aquí los estilos básicos del spinner */
+    display: none; /* Inicialmente oculto */
+}
+
+/* Clase para mostrar el spinner */
+.spinner2.visible {
+    display: block;
+}
+
+/* Clase para ocultar el spinner */
+.spinner2.oculto {
+    display: none;
+}
+
+/*FaQ*/
+
+.faq {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.faq h2 {
+    color: #333;
+    font-size: 4rem;
+}
+
+.faq p {
+  font-size: 70px;
+  
+  
+}
+
+
+
+.faq h3 {
+    color: #000000;
+    font-size: 2rem;
+   
+}
+
+.faq .answer {
+    color: #555;
+    display: none;
+}
+
+
+
+/* Agregamos un estilo sencillo para hacer resaltar las preguntas al pasar el ratón sobre ellas */
+.faq .question:hover {
+  background-color: #f0f0f0;
+  
+  border-radius: 20px 20px;
+  
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+/*FOOTER*/
+
+.pie2{
+    background: linear-gradient(50deg, #fbfdff 0%, #f6fcf7 100%);
+    height: 200px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pie {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    
+    grid-template-areas:
+    "columna columna columna columna"
+    
+
+}
+
+
+
+
+/*ERROR*/
+
+.error {
+    color: red; /* Color de texto rojo */
+    padding: 20px;
+    font-size: 4rem; /* Tamaño de letra grande, ajusta según sea necesario */
+    /* Otros estilos opcionales, como margen, padding, etc. */
+}
+  
+
+
+/*SPINNER*/
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #333;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+
+
+
+/*AlertaExito*/
+
+.alertaExito {
+   
+    color: #4CAF50; /* Color del texto blanco */
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 15px; /* Margen inferior */
+    text-align: center; /* Alineación del texto al centro */
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+/* Puedes agregar más estilos según sea necesario */
